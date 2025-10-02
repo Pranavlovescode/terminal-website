@@ -1,6 +1,6 @@
 <h1><a href="https://terminal.pranavtitambe.in/" target="_blank">Kali Linux Terminal Portfolio Website</a></h1>
 
-<img src="./screenshots/2024-09-30.png" alt="screenshot">
+<img src="./screenshots/2025-10-02.png" alt="screenshot">
 
 <hr>
 
