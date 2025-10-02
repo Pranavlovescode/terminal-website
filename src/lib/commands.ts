@@ -134,62 +134,7 @@ export function getCommandResponse(
   }
 
   if (command === "help") {
-    return `
-<div class="mt-2">
-  <div class="text-kali-blue text-lg font-bold mb-3">
-    ┌─[ <span class="text-kali-green">AVAILABLE_COMMANDS</span> ]─[ <span class="text-kali-cyan">TERMINAL_ARSENAL</span> ]
-  </div>
-  
-  <div class="ml-4 space-y-2">
-    <div class="text-kali-yellow">├─[ <span class="text-kali-white font-semibold">NAVIGATION</span> ]</div>
-    <div class="ml-6 space-y-1 text-kali-gray">
-      <div><span class="text-kali-cyan">clear</span> - Clear the terminal screen</div>
-      <div><span class="text-kali-cyan">help</span> - Display this help menu</div>
-      <div><span class="text-kali-cyan">pwd</span> - Print working directory</div>
-      <div><span class="text-kali-cyan">whoami</span> - Display current user</div>
-    </div>
-    
-    <div class="text-kali-yellow">├─[ <span class="text-kali-white font-semibold">INFORMATION</span> ]</div>
-    <div class="ml-6 space-y-1 text-kali-gray">
-      <div><span class="text-kali-green">about</span> - Display detailed profile information</div>
-      <div><span class="text-kali-green">motd</span> - Show message of the day</div>
-      <div><span class="text-kali-green">techstack</span> - Display technology arsenal</div>
-      <div><span class="text-kali-green">skills</span> - Show programming skill levels</div>
-      <div><span class="text-kali-green">projects</span> - List current projects</div>
-    </div>
-    
-    <div class="text-kali-yellow">├─[ <span class="text-kali-white font-semibold">SOCIAL_LINKS</span> ]</div>
-    <div class="ml-6 space-y-1 text-kali-gray">
-      <div><span class="text-kali-blue">github</span> - Open GitHub profile</div>
-      <div><span class="text-kali-blue">linkedin</span> - Open LinkedIn profile</div>
-      <div><span class="text-kali-blue">email</span> - Send an email</div>
-      <div><span class="text-kali-blue">repo</span> - Open this website's repository</div>
-    </div>
-    
-    <div class="text-kali-yellow">├─[ <span class="text-kali-white font-semibold">UTILITIES</span> ]</div>
-    <div class="ml-6 space-y-1 text-kali-gray">
-      <div><span class="text-kali-purple">echo</span> - Display text</div>
-      <div><span class="text-kali-purple">date</span> - Show current date</div>
-      <div><span class="text-kali-purple">history</span> - Show command history</div>
-      <div><span class="text-kali-purple">su</span> - Switch user (advanced)</div>
-    </div>
-    
-    <div class="text-kali-yellow">└─[ <span class="text-kali-white font-semibold">EASTER_EGGS</span> ]</div>
-    <div class="ml-6 space-y-1 text-kali-gray">
-      <div><span class="text-kali-pink">kali</span> - Display Kali Linux ASCII art</div>
-      <div><span class="text-kali-pink">cat</span> - Get a cute cat image</div>
-    </div>
-  </div>
-  
-  <div class="mt-4 text-kali-blue">
-    └─[ <span class="text-kali-green">TIP</span> ]: Try <span class="text-kali-yellow">'sudo'</span> prefix for advanced mode
-  </div>
-  
-  <div class="mt-3 text-sm text-kali-text-muted">
-    <span class="text-kali-red">➜</span> Type any command to explore!
-  </div>
-</div>
-`.trim().replace(/\n/g, "<br/>");
+    return `<span class="text-kali-green">⟪HELP⟫</span> <span class="text-kali-cyan">0xHLP</span> <span class="text-kali-red">◦◦◦</span><br/><span class="text-kali-cyan">◆</span> <span class="text-kali-yellow">nav</span> clear•help•pwd•whoami<br/><span class="text-kali-green">◆</span> <span class="text-kali-yellow">info</span> about•motd•techstack•skills•projects<br/><span class="text-kali-blue">◆</span> <span class="text-kali-yellow">social</span> github•linkedin•email•repo<br/><span class="text-kali-purple">◆</span> <span class="text-kali-yellow">utils</span> echo•date•history•su<br/><span class="text-kali-pink">◆</span> <span class="text-kali-yellow">fun</span> kali•cat<br/><span class="text-kali-yellow">⟫</span> <span class="text-kali-red">sudo</span> for <span class="text-kali-green">advanced</span>`.replace(/\n/g, "<br/>");
   }
 
   return `${command}: command not found`;
