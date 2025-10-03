@@ -8,6 +8,7 @@ import parse from "html-react-parser";
 import { useUsernameContext } from "../../context/UsernameContext";
 import { getCommandResponse, MOTD } from "../../lib/commands";
 import { useLocalStorage } from "../../hooks/useLocalStorage";
+import { FaGithub } from "react-icons/fa";
 
 interface TerminalBodyProps {}
 
